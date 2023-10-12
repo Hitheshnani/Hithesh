@@ -1,0 +1,26 @@
+1.
+
+function reverseWordsInSentence(sentence) {
+    const words = sentence.split(' ');
+    const reversedWords = words.map(word => reverseWord(word));
+    const reversedSentence = reversedWords.join(' ');
+    return reversedSentence;
+}
+
+function reverseWord(word) {
+    return word.split('').reverse().join('');
+}
+
+const inputSentence = "This is a sunny day";
+const reversedSentence = reverseWordsInSentence(inputSentence);
+console.log("Original Sentence:", inputSentence);
+console.log("Reversed Sentence:", reversedSentence);
+
+
+2.
+
+const originalArray = [5, 1, 9, 3, 7, 2, 8, 4, 6];
+const sortedArray = originalArray.sort((a, b) => b - a);
+console.log("Original Array:", originalArray);
+console.log("Sorted Array (Descending Order):", sortedArray);
+
